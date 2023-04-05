@@ -109,11 +109,11 @@ nav li a:hover {
 }
 
 .harmony-generator {
-    background-image: url(/media/harmGen.png);
+    background-image: url(media/harmGen.png);
     background-size: cover;
 }
 .flexbox-site {
-    background-image: url(/media/flexboxtest.png);
+    background-image: url(media/flexboxtest.png);
     background-size: cover;
 }
 
