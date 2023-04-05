@@ -7,8 +7,6 @@
     
 }
 
-
-
 header {
     border-bottom: 1px solid black;
     padding: 1rem;
@@ -153,6 +151,9 @@ input{
     padding: 7px;
     font-size: 1.7rem;
 }
+#phone{
+    
+}
 textarea{
     display: block;
     width: 400px;
@@ -170,6 +171,11 @@ textarea{
     border-radius: 10px;
     margin: auto;
     margin-top: 10px;
+    transition: all 0.3s ease 0s;
+    background-color: white;
 }
-
+#submit:hover {
+    color: white;
+    background-color: black;
+}
 
