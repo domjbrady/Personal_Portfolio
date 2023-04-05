@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    
+    
+}
+
+
+
+header {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background-color: white;  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#logo {
+    font-size: 1.6rem;
+    
+} 
+nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 0 1rem 0;
+    
+}
+
+nav li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+nav li a:hover {
+    color: orange;
+}
+
+
+/*lets talk grids*/
+
+.grid-container {
+    margin-top: 62.5px;
+    display: grid;
+    gap: 10px;
+}
+
+.about-me-grid-container {
+    background-color: #eee;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-me {
+   grid-column: 1;
+   align-self: center;
+   align-items: center;
+   justify-self: center;
+   width: 90%;
+}
+
+.about-me h2  {
+    text-align: center;
+    font-size: 3rem;
+}
+.about-me p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.portfolios-wrapper {
+    display: flex;
+    overflow-x: auto;
+    
+}
+
+#porttitle {
+    text-align: center;
+    padding: 25px;
+    font-size: 2.5rem;
+   
+}
+
+.item {
+    min-width: 450px;
+    min-height: 450px;
+    border: solid 1px black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    align-content: center;
+    text-align: center;
+
+}
+
+.harmony-generator {
+    background-image: url(/media/harmGen.png);
+    background-size: cover;
+}
+.flexbox-site {
+    background-image: url(/media/flexboxtest.png);
+    background-size: cover;
+}
+
+
+/*form*/
+form {
+    justify-content: center;
+}
+
+
+legend {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+fieldset {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid black 1px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+input{
+    border-radius: 10px;
+    height: 40px;
+    width:400px;
+    padding: 7px;
+    font-size: 1.7rem;
+}
+textarea{
+    display: block;
+    width: 400px;
+    border-radius: 10px;
+    height: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+#submit {
+    display: block;
+    height: 30px;
+    width: 200px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
