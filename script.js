@@ -10,4 +10,6 @@ items.forEach(item => {
     item.querySelector('.item-description-div').style.display = 'none';
     
   });
+
+
 });
