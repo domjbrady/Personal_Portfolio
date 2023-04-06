@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family:'Times New Roman', Times, serif;
+   
 }
 
 a {
@@ -53,6 +54,11 @@ nav li a:hover {
 
 /*lets talk grids*/
 
+.section1 {
+    background-color: black;
+    padding: 50px;
+}
+
 .grid-container {
     margin-top: 62.5px;
     display: grid;
@@ -67,23 +73,54 @@ nav li a:hover {
     margin-top: 62.5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+
 }
 
 .about-me {
    grid-column: 1;
-   align-self: center;
-   align-items: center;
-   justify-self: center;
+   display: flex;
+   flex-direction: column;
    width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 10px;
+   justify-content: space-evenly;
+   
+}
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
-.about-me h2  {
+.about-me-text h2  {
     text-align: center;
     font-size: 3rem;
+    
 }
-.about-me p {
+.about-me-text p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    
+}
+.about-me h3 {
+    font-size: 2rem;
+    text-align: center;
+    
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-container img {
+    max-width: 80px;
+    width: auto;
+}
+.me {
+    align-self: center;
+    background-color: black;
 }
 
 /* --- PORTFOLIO SECION --- */
@@ -129,7 +166,7 @@ nav li a:hover {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all 0.7s ease 0s;
+    transition: all 1.5s ease 0s;
 }
 
 .item-description-div:hover {
@@ -158,17 +195,27 @@ nav li a:hover {
     background-size: cover;
 }
 
-
 /*form*/
-form {
-    justify-content: center;
+.contact {
+    border-top: solid 1px black;
+    margin-top: 20px;
+    background-color: black;
+   
 }
 
+form {
+    justify-content: center;
+    padding-bottom: 20px;
+}
 
 legend {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 fieldset {
@@ -180,6 +227,8 @@ fieldset {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: #eee;
+
     
 }
 label {
@@ -193,6 +242,7 @@ input{
     width:400px;
     padding: 7px;
     font-size: 1.7rem;
+    border: solid 1px black;
 }
 
 textarea{
@@ -203,20 +253,23 @@ textarea{
     padding: 10px;
     font-size: 1.2rem;
 }
+
 #submit {
     display: block;
     height: 30px;
-    width: 200px;
+    width: 100px;
     font-size: 1.5rem;
     font-weight: bold;
+    border: solid black 2px;
     border-radius: 10px;
     margin: auto;
     margin-top: 10px;
-    transition: all 0.3s ease 0s;
+    transition: all 2s ease 0s;
     background-color: white;
 }
 #submit:hover {
     color: white;
+    width: 150px;
     background-color: black;
 }
 
