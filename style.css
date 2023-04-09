@@ -150,8 +150,8 @@ nav li a:hover {
 }
 
 .item {
-    min-width: 390px;
-    min-height: 390px;
+    min-width: 350px;
+    min-height: 350px;
     
     border: solid 1px black;
     margin-left: 10px;
