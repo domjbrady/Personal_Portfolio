@@ -2,33 +2,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dom Brady - Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href = style.css>
+    <script src="https://kit.fontawesome.com/90e439938e.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
 
     <header class="banner">
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton"><i class="fas fa-bars"></i></label>
+           
             <h2 id="logo">DOM BRADY</h2>
+
             <ul class="nav">
-                <li><a href="#">about</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#1" onclick="uncheckCheckbox()">about</a></li>
+                <li><a href="#2" onclick="uncheckCheckbox()">projects</a></li>
+                <li><a href="#3" onclick="uncheckCheckbox()" >contact</a></li>
         </nav>
     </header>
 
 
-<div class="section1">
+<section class="section1" id="1">
+
+    <div class="about">
   
-    <section class="about-me-grid-container">
-        
-        
         <div class="about-me">
-            
-            
+                
+                
             <div class="about-me-text">
-                <h2>ABOUT</h2>
-                <p>Hi! My name is Dom Brady and I am Geography graduate, a musician, and more recently, a fullstack developer in training. Welcome to my portfolio site! Please take a look around at examples of my past projects.</p>
+                <div>
+                    <h2>ABOUT</h2>
+                    <p>Hi! My name is Dom Brady and I am Geography graduate, a musician, and more recently, a fullstack developer in training. Welcome to my portfolio site! Please take a look around at examples of my past projects.</p>
+                </div>
             </div>
 
             <div class="skill-section">
@@ -43,13 +50,16 @@
 
         </div>
 
-        <img class="me" src="media/me.jpg" width="100%">
-    </section>
+        <div class="me-container">
+            <img class="me" src="media/me.jpg" width="100%">
+        </div>
 
-</div>
+    </div>
+
+</section>
 
     
-    <section class="section2">
+    <section class="section2" id="2">
         <h2 id="porttitle">PORTFOLIO PROJECTS</h2>
         <div class = "portfolios-wrapper">
 
@@ -118,7 +128,7 @@
     </section>
 
 
-    <section class="contact">
+    <section class="contact" id="3">
 
         
 
