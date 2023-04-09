@@ -331,6 +331,7 @@ textarea{
         text-align: center;
         position:fixed;
         top: 62.5px;
+        border-top: black solid 1px;
         transition: all .5s;
         display: flex;
         flex-direction: column;
