@@ -263,12 +263,14 @@ textarea{
     height: 100px;
     padding: 10px;
     font-size: 1.2rem;
+    width: 100%;
 }
 
 #submit {
     display: block;
     height: 30px;
     max-width: 100px;
+    width: 40%;
     font-size: 1.5rem;
     font-weight: bold;
     border: solid black 2px;
@@ -287,7 +289,7 @@ textarea{
     .about {
         margin-top: 30px;
         flex-direction: column-reverse;
-        width: 75%;
+        width: 90%;
     }
     
     .about-me {
